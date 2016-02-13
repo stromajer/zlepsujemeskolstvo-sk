@@ -1,0 +1,90 @@
+{% block footer %}
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col">
+                    <div class="block contact-block">
+                        <!--@todo: replace with company contact details-->
+                        <h3>
+                            Kontakt
+                        </h3>
+                        <address>
+                            <ul class="fa-ul">
+                                <li>
+                                    <abbr title="Email"><i class="fa fa-li fa-envelope"></i></abbr>
+                                    <a href="mailto:info@zlepsujemeskolstvo.sk">info@zlepsujemeskolstvo.sk</a>
+                                </li>
+                                <li>
+                                    <abbr title="Github"><i class="fa fa-li fa-github"></i></abbr>
+                                    <a href="https://github.com/teo-sk/zlepsujemeskolstvo-sk/">Pomôž zlepšiť túto
+                                        stránku</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-5 col">
+                    <div class="block">
+                        <h3>
+                            Partneri
+                            <small style="color:inherit">(v abecednom poradí)</small>
+                        </h3>
+                        <ul>
+                            <li><a href="//www.sukromneskoly.sk/">Asociácia súkromných škôl a školských zariadení
+                                    Slovenska</a></li>
+                            <li><a href="//www.casopisdobraskola.sk">Dobrá škola n.o.</a></li>
+                            <li><a href="//www.socioterapia.sk">Inštitút psychoterapie a socioterapie</a></li>
+                            <li><a href="//www.kampanadost.sk/">Kampaň A DOSŤ!</a></li>
+                            <li><a href="//www.liberaterra.sk">Libera Terra</a></li>
+                            <li><a href="//www.digitalnomads.sk">OZ Digital Nomads</a></li>
+                            <li><a href="//www.ozsova.sk">OZ SOVA</a></li>
+                            <li><a href="//www.didaktis.sk">Pedagogické vydavateľstvo Didaktis</a></li>
+                            <li><a href="//www.montessori.sk">Súkromná základná škola Marie Montessori</a></li>
+                            <li><a href="//www.skolaufilipa.sk">Súkromná základná škola u Filipa</a></li>
+                            <li><a href="//www.pomoz.sk">Výzva pomôž svojmu učiteľovi</a></li>
+                            <li><a href="//www.zspribno.edu.sk/">Základná škola, Pribinova 9, Nováky</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col">
+                    <div class="block newsletter">
+                        <h3>
+                            Newsletter
+                        </h3>
+                        <p>Zadajte svoj e-mail, aby sme vám mohli dať vedieť, keď spustíme ďaľsie funkcie tejto
+                            stránky</p>
+                        {% if showMailingForm %}
+                            {{ form_start(mailingForm) }}
+                            {{ form_errors(mailingForm) }}
+                            <div class="input-group input-group-sm">
+                            <label class="sr-only" for="email-field">Email</label>
+                            {{ form_widget(mailingForm.email) }}
+                            <span class="input-group-btn">
+                            {{ form_widget(mailingForm.fingerprint) }}
+                            {{ form_widget(mailingForm.submit) }}
+                            </span>
+                            </div>
+                            {{ form_end(mailingForm) }}
+                        {% else %}
+                            <small><strong>Ďakujeme, váš e-mail bol pridaný.</strong></small>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="toplink">
+                    <a href="#top" class="top-link" title="Back to top">Hore <i class="fa fa-chevron-up"></i></a>
+                </div>
+                <!--@todo: replace with company copyright details-->
+                <div class="subfooter">
+                    <div class="col-md-6">
+                        <p>Bootstrap téma od <a href="http://appstraptheme.com">AppStrap</a> | Copyright 2016 &copy; <a
+                                    href="http://digitalnomads.sk">Digital Nomads</a></p>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

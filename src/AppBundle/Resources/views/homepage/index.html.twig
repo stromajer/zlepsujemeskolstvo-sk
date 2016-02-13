@@ -1,192 +1,188 @@
-        {% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %}
         {% form_theme form 'bootstrap_3_layout.html.twig' %}
         {% form_theme mailingForm 'bootstrap_3_layout.html.twig' %}
 
         {% block title %}Zlepšujeme školstvo{% endblock %}
 
         {% block body %}
-        <!-- ======== @Region: #highlighted ======== -->
-        <div id="highlighted">
-          <div class="inner">
-            <!--Static Banner-->
-            <section class="static-banner container">
-              <div class="slide">
-                  <div class="col-md-12 caption">
-                      <div class="jumbotron">
-                        <div class="jumbo-less">
-                          Sme účastníkmi významného pohybu v našej spoločnosti. Učitelia, rodičia, študenti aj iní občania sa rozhodli nahlas prejaviť svoj nesúhlas a frustráciu z nedôstojnosti, s akou sa s nimi dlhodobo zaobchádza. Protesty sú hlasné a jenoznačne hovoria, že takto to už ďalej so vzdelávaním a školstvom nesmie ísť. 
-                          <br/><br/>
-                          <strong>Ale ako to má ísť ďalej? Čo sa má zmeniť? A ako?</strong>
-                          <br/><br/>
-                          Inicaitíva "Zlepšujeme školstvo" na tomto portáli ponúka priestor pre učiteľov, rodičov, študentov a všetkých občanov napísať svoj nápad alebo návrh čo a ako by sa malo zmeniť, čo by sa malo vo vzdelávaní a školstve na Slovensku uskutočniť a naopak, čoho by sme sa mali bez náhrady vzdať. Sľubujeme, že každý podnet bude zaznamenaný a zverejnený, nebude opomenutý a bude sa s ním pracovať. Pridajte svoj podnet a staňte sa hlasmi zboru, ktorý sa nebude dať prepočuť. Pre viac informácií o spôsobe zadávania a spracovania Vašich podnetov, o našej iniciatíve a jej ambíciách v spojení so všetkými príčinlivými zlepšiť naše školstvo kliknite na <strong><a href="#" class="show-jumbo-more">čítať viac.</a></strong>
-                        </div>                         
-
-                          <div class="jumbo-more" style="display:none">
-                            Iniciatíva "zlepšujeme školstvo" vznikla v posledných januárových dňoch 2016, keď sa zreteľne preukázalo, že aj tí najelitnejší politici opäť zlyhávajú v pochopení potrieb občanov a pochopení pohybu v spoločnosti. Zo štrajku učiteľov sa postupom času stalo vyjadrovanie občianskeho názoru a ten, ako býva v poslednej dobe zvykom, nebol ani len v náznaku započutý. 
-                            <br/><br/>
-                            Ľudia (učitelia, rodičia a zriaďovatelia) zo Súkromnej základnej školy Marie Montessori v Bratislave, Inštitútu psychoterapie a socioterapie (IPS) a občianskeho združenia Digital Nomads sa odhodlali vytvoriť túto platformu na zozbieranie podnetov na zmenu od všetkých príčinlivých ľudí, ktorí CHCÚ povedať, čo si želajú. 
-                            <br/><br/>
-                            Koordinátorom iniciatívy je Ivan Juráš a spolupracovníkmi na iniciatíve sú viacerí učitelia, rodičia a občania. 
-                            <br/><br/>
-                            Ambíciou tejto iniciatívy je v spolupráci s ďalšími formálnymi aj neformálnymi zoskupeniami za pomoci portálu www.zlepsujemeskolstvo.sk zbierať, triediť a následne spracovávať podnety týkajúce sa vzdelávania a školstva na Slovensku.<br/>
-                            Tieto podnety poskytneme novej vláde po nadchádzajúcich parlamentných voľbách ako neopomenuteľný hlas vyjadrujúci vôľu učiteľov, rodičov, študentov a občanov, ktorý bude zohľadnený pri tvorbe programového vyhlásenia vlády.<br/>
-                            Na to, aby náš hlas mal skutočne silu a bol skutočne neopomenuteľný, je potrebné, aby sa vyjadrilo čo najviac z nás, aby podnety boli konštruktívne a sledovali cieľ zlepšenia.<br/>
-                            Preto, prosím, neváhajte a posielajte podnety.
-                            <br/><br/>
-                            Pri spracovaní podnetov pred ich zverejnením budeme robiť kontrolu obsahu, kedy budeme vyraďovať príspevky a podnety alebo ich časti, ktoré:
-                            <ul>
-                                <li>nebudú obsahovať žiadne návrhy</li>
-                                <li>budú útočné alebo znevažujúce, prípadne budú svojím obsahom v rozpore so zákonom (napríklad podnecovať násilie proti skupine obyvateľov alebo jednotlivcovi, hanobenie národa, rasy alebo presvedčenia, podnecovanie k národnostnej a rasovej nenávisti, a pod.).</li>
-                            </ul>
-                            <strong>Všetky podnety, ktoré budú obsahovať návrh riešenia a budú v súlade so zákonom a dobrým občianskym spolužitím, budú zverejnené. </strong>
-                            <br/><br/>
-                            Pri zadávaní budete musieť vyplniť Vaše meno, priezvisko a emailovú adresu. Následne si vyberte kategóriu, do ktorej Váš príspevok chcete zaradiť. V prípade, že ide o komplexnejší návrh týkajúci sa viacerých kategórií, rozdeľte ho podľa kategórií, alebo ho zadajte opakovane do viacerých kategórií. 
-                            <br/><br/>
-                            Váš podnet sa po zadaní a schválení administrátorom príslušnej kategórie objaví v prehľade podnetov za príslušnú kategóriu. 
-                            <br/><br/>
-                            Kategórie použité na tomto portáli pochádzajú z koncepčných dokumentov, na ktorých tvorbe sa podieľali (uvedení v abecednom poradí): Veronika Adamčíková, Peter Bero, Vla­dimír Bur­jan, Stanislav Boledovič, Daniel Bútora, Xaver Gubáš, Peter Halák, Marcela Havrilová, Ivan Juráš, Mirka Kiripolská, Martin Kríž, Rado Masaryk, Martin Menšík, Saskia Repčíková, Mária Smreková, Marián Zachar, Zuzana Zimenová.
-                            <br/><br/>
-                            <em>Emailové adresy sú výhradne pre potreby komunikácie Iniciatívy "Zlepšujeme školstvo" s Vami, sú uložené v súlade so zákonom o ochrane osobných údajov po dobu trvania Iniciatívy a neposkytneme ich tretím osobám. </em>
-                            <br/><br/>
-                            Želám nám všetkým veľa dobrých návrhov, aby vo vzdelávaní a školstve na Slovensku konečne začalo svitať na lepšie časy a zavanul čerstvý vzduch. 
-                            <br/><br/>
-                            <strong>
-                            Ivan Juráš<br/>
-                            Koordinátor Iniciatívy "Zlepšujeme školstvo" 
-                            </strong>
-                          </div>
-                      </div>
-                      <blockquote>
-                          <p>Máme už {{count}} podnetov. Pridajte ten svoj!</p>
-                      </blockquote>
-                      <a href="#add-suggestion" class="btn btn-lg btn-primary center-block">Pridať podnet</a> 
-                  </div>
-              </div>
-          </section>
-      </div>
-    </div>
-
-    <div id="content-below" class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="upsell">
-            <small class="muted">Ak sa chcete dozvedieť, kedy spustíme ďaľšie funkcie tejto stránky, zadajte svoj mail do formulára v pätičke.</small>
-        </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- ======== @Region: #content ======== -->
-    <div id="content">
-      <div class="container">
-      <!--Customer testimonial-->
-      <div class="block testimonials margin-top-large"> <a name="suggestion-categories"></a>
-        <h2 class="title-divider">
-          <span>Kategórie <span class="de-em">podnetov</span></span>
-          <small>Tu vidíte 4 najnovšie a 4 najpopulárnejšie podnety pre jednotlivé kategórie</small>
-      </h2>
-      <div class="row">
-          <div class="panel-group" id="list-accordion">
-              {% for category in categories %}
-                  <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseCategory{{loop.index}}" aria-expanded="false" class="collapsed"> {{category.title}} <small class="text-muted">
-                                      {% transchoice category.allSuggestions|length %}
-
-                                      {0} Ešte žiadne podnety|{1} Jeden podnet |]1,4] %count% podnety celkovo |]4,Inf] %count% podnetov celkovo
-
-                                      {% endtranschoice %}
-                                    </small> </a>
-                        </h4>
-                      </div>
-                      <div id="collapseCategory{{loop.index}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                        <div class="panel-body">
-                            {% if category.newestSuggestions is not empty %}
-                            <h4>Najnovšie podnety</h4>
-                            <div class="panel-group panel-group-list-style" id="list-accordion-inner">
-                            {% for sug in category.newestSuggestions %}
-                                <div class="panel panel-default">
-                                  <div class="panel-heading"> <a data-toggle="collapse" data-parent="#list-accordion-inner" href="#collapse{{category.id}}{{loop.index}}" class="panel-title collapsed" aria-expanded="false">Pridané v kategórii <strong>{{sug.category}}</strong> dňa <em>{{sug.created |date("d. m. Y")}}</em>  <span class="pull-right"><span class="glyphicon glyphicon-thumbs-up"></span> <span class="votes-for-{{sug.id}}">{{sug.votes|length}}</span></span></a> </div>
-                                  <div id="collapse{{category.id}}{{loop.index}}" class="collapse" aria-expanded="false" style="height: 0px;">
-                                    <div class="panel-body">
-                                        <p class="pull-right">
-                                            <a href="#" class="btn btn-primary" data-vote="{{sug.id}}">Hlasuj</a> 
-                                        </p>
-                                        <p>{{sug.text|nl2br}}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                            {% else %}
-                            {% endfor %}
+            <!-- ======== @Region: #highlighted ======== -->
+            <div id="highlighted">
+                <div class="inner">
+                    <!--Static Banner-->
+                    <section class="static-banner container">
+                        <div class="slide">
+                            <div class="col-md-12 caption">
+                                {% include '@App/homepage/Partials/motd.html.twig' %}
+                                {% include '@App/homepage/Partials/quote.html.twig' %}
+                                <a href="#add-suggestion" class="btn btn-lg btn-primary center-block">Pridať podnet</a>
                             </div>
-                            <h4>Najpopulárnejšie podnety</h4>
-                            <div class="panel-group panel-group-list-style" id="list-accordion-inner2">
-                            {% for sug in category.popularSuggestions |slice(0, 4) %}
-                                <div class="panel panel-default">
-                                  <div class="panel-heading"> <a data-toggle="collapse" data-parent="#list-accordion-inner2" href="#collapse{{category.id}}p{{loop.index}}" class="panel-title collapsed" aria-expanded="false">Pridané v kategórii <strong>{{sug.category}}</strong> dňa <em>{{sug.created |date("d. m. Y")}}</em>  <span class="pull-right"><span class="glyphicon glyphicon-thumbs-up"></span> <span class="votes-for-{{sug.id}}">{{sug.votes|length}}</span></span></a> </div>
-                                  <div id="collapse{{category.id}}p{{loop.index}}" class="collapse" aria-expanded="false" style="height: 0px;">
-                                    <div class="panel-body">
-                                        <p class="pull-right">
-                                            <a href="#" class="btn btn-primary" data-vote="{{sug.id}}">Hlasuj</a> 
-                                        </p>
-                                        <p>{{sug.text|nl2br}}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                            {% endfor %}
-                            </div>
-                            <a href="{{path('category', {id: category.id})}}" class="btn btn-default pull-right"><i class="fa fa-arrow-circle-right"></i> Prezerať všetky</a>
-                            {% else %}
-                            <p>Žiadne podnety v tejto kategórii ešte neboli pridané.</p>
-                            {% endif %}
                         </div>
-                      </div>
+                    </section>
+                </div>
+            </div>
+
+            <div id="content-below" class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="upsell">
+                            <small class="muted">Ak sa chcete dozvedieť, kedy spustíme ďaľšie funkcie tejto stránky,
+                                zadajte svoj mail do formulára v pätičke.
+                            </small>
+                        </div>
                     </div>
-              {% endfor %}
+                </div>
+            </div>
 
-          </div>
-      </div>
-      </div>
-        <!-- Services -->
-        <div class="block features">
-          <h2 class="title-divider"><a name="add-suggestion"></a>
-            <span>Pridať <span class="de-em">podnet</span></span>
-            <small>Pridajte váš podnet na zlepšenie školstva.</small>
-        </h2>
-        <div class="row">
-            {{ form_start(form, { 'attr' : { 'class': 'form-wrapper' } }) }}
-                {{ form_errors(form) }}
+            <!-- ======== @Region: #content ======== -->
+            <div id="content">
+                <div class="container">
+                    <!--Customer testimonial-->
+                    <div class="block testimonials margin-top-large"><a name="suggestion-categories"></a>
+                        <h2 class="title-divider">
+                            <span>Kategórie <span class="de-em">podnetov</span></span>
+                            <small>Tu vidíte 4 najnovšie a 4 najpopulárnejšie podnety pre jednotlivé kategórie</small>
+                        </h2>
+                        <div class="row">
+                            <div class="panel-group" id="list-accordion">
+                                {% for category in categories %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion"
+                                                   href="#collapseCategory{{ loop.index }}" aria-expanded="false"
+                                                   class="collapsed"> {{ category.title }}
+                                                    <small class="text-muted">
+                                                        {% transchoice category.allSuggestions|length %}
 
-                {{ form_row(form.category) }}
-                {{ form_row(form.name) }}
-                {{ form_row(form.surname) }}
-                {{ form_row(form.email) }}
-                {{ form_row(form.text, { 'attr': { 'rows': '20' }}) }}
-            {{ form_end(form) }}
-        </div>
-    </div>
-    </div>
-    </div>
+                                                        {0} Ešte žiadne podnety|{1} Jeden podnet |]1,4] %count% podnety
+                                                        celkovo |]4,Inf] %count% podnetov celkovo
 
-    <!-- ======== @Region: #content-below ======== -->
-    <div id="content-below" class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="upsell">
-            <small class="muted">Ak sa chcete dozvedieť, kedy spustíme ďaľšie funkcie tejto stránky, zadajte svoj mail do formulára v pätičke.</small>
-        </div>
-    </div>
-    </div>
-    </div>
-    {% endblock %}
+                                                        {% endtranschoice %}
+                                                    </small>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseCategory{{ loop.index }}" class="panel-collapse collapse"
+                                             aria-expanded="false" style="height: 0px;">
+                                            <div class="panel-body">
+                                                {% if category.newestSuggestions is not empty %}
+                                                    <h4>Najnovšie podnety</h4>
+                                                    <div class="panel-group panel-group-list-style"
+                                                         id="list-accordion-inner">
+                                                        {% for sug in category.newestSuggestions %}
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading"><a data-toggle="collapse"
+                                                                                              data-parent="#list-accordion-inner"
+                                                                                              href="#collapse{{ category.id }}{{ loop.index }}"
+                                                                                              class="panel-title collapsed"
+                                                                                              aria-expanded="false">Pridané
+                                                                        v kategórii <strong>{{ sug.category }}</strong>
+                                                                        dňa <em>{{ sug.created |date("d. m. Y") }}</em>
+                                                                        <span class="pull-right"><span
+                                                                                    class="glyphicon glyphicon-thumbs-up"></span> <span
+                                                                                    class="votes-for-{{ sug.id }}">{{ sug.votes|length }}</span></span></a>
+                                                                </div>
+                                                                <div id="collapse{{ category.id }}{{ loop.index }}"
+                                                                     class="collapse" aria-expanded="false"
+                                                                     style="height: 0px;">
+                                                                    <div class="panel-body">
+                                                                        <p class="pull-right">
+                                                                            <a href="#" class="btn btn-primary"
+                                                                               data-vote="{{ sug.id }}">Hlasuj</a>
+                                                                        </p>
+                                                                        <p>{{ sug.text|nl2br }}</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {% else %}
+                                                        {% endfor %}
+                                                    </div>
+                                                    <h4>Najpopulárnejšie podnety</h4>
+                                                    <div class="panel-group panel-group-list-style"
+                                                         id="list-accordion-inner2">
+                                                        {% for sug in category.popularSuggestions |slice(0, 4) %}
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading"><a data-toggle="collapse"
+                                                                                              data-parent="#list-accordion-inner2"
+                                                                                              href="#collapse{{ category.id }}p{{ loop.index }}"
+                                                                                              class="panel-title collapsed"
+                                                                                              aria-expanded="false">Pridané
+                                                                        v kategórii <strong>{{ sug.category }}</strong>
+                                                                        dňa <em>{{ sug.created |date("d. m. Y") }}</em>
+                                                                        <span class="pull-right"><span
+                                                                                    class="glyphicon glyphicon-thumbs-up"></span> <span
+                                                                                    class="votes-for-{{ sug.id }}">{{ sug.votes|length }}</span></span></a>
+                                                                </div>
+                                                                <div id="collapse{{ category.id }}p{{ loop.index }}"
+                                                                     class="collapse" aria-expanded="false"
+                                                                     style="height: 0px;">
+                                                                    <div class="panel-body">
+                                                                        <p class="pull-right">
+                                                                            <a href="#" class="btn btn-primary"
+                                                                               data-vote="{{ sug.id }}">Hlasuj</a>
+                                                                        </p>
+                                                                        <p>{{ sug.text|nl2br }}</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {% endfor %}
+                                                    </div>
+                                                    <a href="{{ path('category', {id: category.id}) }}"
+                                                       class="btn btn-default pull-right"><i
+                                                                class="fa fa-arrow-circle-right"></i> Prezerať
+                                                        všetky</a>
+                                                {% else %}
+                                                    <p>Žiadne podnety v tejto kategórii ešte neboli pridané.</p>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Services -->
+                    <div class="block features">
+                        <h2 class="title-divider"><a name="add-suggestion"></a>
+                            <span>Pridať <span class="de-em">podnet</span></span>
+                            <small>Pridajte váš podnet na zlepšenie školstva.</small>
+                        </h2>
+                        <div class="row">
+                            {{ form_start(form, { 'attr' : { 'class': 'form-wrapper' } }) }}
+                            {{ form_errors(form) }}
+
+                            {{ form_row(form.category) }}
+                            {{ form_row(form.name) }}
+                            {{ form_row(form.surname) }}
+                            {{ form_row(form.email) }}
+                            {{ form_row(form.text, { 'attr': { 'rows': '20' }}) }}
+                            {{ form_end(form) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== @Region: #content-below ======== -->
+            <div id="content-below" class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="upsell">
+                            <small class="muted">Ak sa chcete dozvedieť, kedy spustíme ďaľšie funkcie tejto stránky,
+                                zadajte svoj mail do formulára v pätičke.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
 
 {% block scripts %}
-{% if showThanks %}
-<script type="text/javascript">
-    $(function() {
-        toastr.success('Ďakujeme! Váš podnet bol odoslaný na schválenie a objaví sa tu čoskoro.');
-    });
-</script>
-{% endif %}
+    {% if showThanks %}
+        <script type="text/javascript">
+            $(function () {
+                toastr.success('Ďakujeme! Váš podnet bol odoslaný na schválenie a objaví sa tu čoskoro.');
+            });
+        </script>
+    {% endif %}
 {% endblock %}

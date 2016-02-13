@@ -121,3 +121,13 @@ sonata_admin:
 sonata_user:
     security_acl: true
     manager_type: orm # can be orm or mongodb
+
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: true
+    filters:
+        cssrewrite: ~
+        yui_js:
+            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
+        yui_css:
+            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
