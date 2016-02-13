@@ -1,4 +1,5 @@
 /web/bundles
+/src/AppBundle/Resources/public/vendor
 /app/config/parameters.yml
 /build/
 /phpunit.xml
